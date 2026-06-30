@@ -34,11 +34,11 @@
 先把本仓库拉到本地（任选其一）：
 
 ```bash
-git clone https://github.com/liantaook97/fduthesis.git
-cd fduthesis
+git clone https://github.com/liantaook97/fduthesis-2026.git
+cd fduthesis-2026
 ```
 
-或在[仓库首页](https://github.com/liantaook97/fduthesis)点 **Code → Download ZIP**，解压后进入该目录。
+或在[仓库首页](https://github.com/liantaook97/fduthesis-2026)点 **Code → Download ZIP**，解压后进入该目录。
 
 `fduthesis-2026.cls/def` 等模板文件需要先用 [l3build](https://github.com/latex3/l3build)（TeX Live、MiKTeX 已自带）从 `source/fduthesis.dtx` 生成。在项目根目录操作，根据你写论文的环境二选一：
 
@@ -115,7 +115,7 @@ l3build unpack
 
 ### 反馈
 
-与 2026 适配相关的问题，欢迎在 [本仓库的 issues](https://github.com/liantaook97/fduthesis/issues) 反馈（维护说明见上文「关于本版本」）。与 2026 适配无关的通用功能问题，建议直接反馈到[原项目](https://github.com/stone-zeng/fduthesis)。
+与 2026 适配相关的问题，欢迎在 [本仓库的 issues](https://github.com/liantaook97/fduthesis-2026/issues) 反馈（维护说明见上文「关于本版本」）。与 2026 适配无关的通用功能问题，建议直接反馈到[原项目](https://github.com/stone-zeng/fduthesis)。
 
 ### 许可证
 
@@ -157,11 +157,11 @@ The user interface is largely the same as the original; for detailed usage pleas
 First get the repository (either way):
 
 ```bash
-git clone https://github.com/liantaook97/fduthesis.git
-cd fduthesis
+git clone https://github.com/liantaook97/fduthesis-2026.git
+cd fduthesis-2026
 ```
 
-Or click **Code → Download ZIP** on the [repository page](https://github.com/liantaook97/fduthesis) and unzip it.
+Or click **Code → Download ZIP** on the [repository page](https://github.com/liantaook97/fduthesis-2026) and unzip it.
 
 `fduthesis-2026.cls/def` and friends are not in the repository; you first generate them from `source/fduthesis.dtx` with [l3build](https://github.com/latex3/l3build) (bundled with TeX Live and MiKTeX). The commands below are run in the repository root; choose based on where you write your thesis:
 
@@ -229,7 +229,7 @@ Then put `fduthesis-2026.cls`, `fduthesis-2026-en.cls`, `fduthesis-2026.def`, `f
 
 ### Feedback
 
-Issues about the 2026 adaptation are welcome in [this repository](https://github.com/liantaook97/fduthesis/issues) (see the maintenance note under "About this version" above). For general feature requests unrelated to the 2026 adaptation, please use the [original project](https://github.com/stone-zeng/fduthesis).
+Issues about the 2026 adaptation are welcome in [this repository](https://github.com/liantaook97/fduthesis-2026/issues) (see the maintenance note under "About this version" above). For general feature requests unrelated to the 2026 adaptation, please use the [original project](https://github.com/stone-zeng/fduthesis).
 
 ### License
 
