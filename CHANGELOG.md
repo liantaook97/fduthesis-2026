@@ -2,9 +2,22 @@
 
 本文档格式遵守 [Keep a Changelog]。
 
-## [[未发布]]
+本仓库版本号形如 `v0.9a-2026.N`，表示基于上游 [stone-zeng/fduthesis](https://github.com/stone-zeng/fduthesis) `v0.9a` 之后的开发版（`main` 分支）所做的第 N 次复旦 2026 规范适配。
 
-- 修复
+## fduthesis-2026 v0.9a-2026.1 (2026-06-29)
+
+本版本基于上游 `main` 分支（`v0.9a` 之后，已含下方「上游修复」一节），针对复旦大学 2026 学位论文规范进行适配。遵循 LPPL-1.3c，文档类已重命名为 `fduthesis-2026`，未经复旦大学官方审核或授权（沿用上游免责声明）。
+
+- 改名
+  - 文档类 `fduthesis` 更名为 `fduthesis-2026`（`fduthesis-2026.cls` / `fduthesis-2026-en.cls` / `fduthesis-2026.def`），使用 `\documentclass{fduthesis-2026}`
+- 新增
+  - 新增 `info/supervisor-title` 选项，单独填写导师职称，显示于封面导师姓名之后
+  - 新增 `info/student-category` 选项，控制封面是否显示「同等学力人员 / 英文项目」的项目类型标识
+- 变更（2026 规范）
+  - 封面顶部区域：中图分类号移至左上角、去除学号（移入信息区）、增加项目类型标识，并调整对齐方式
+  - 封面信息顺序调整为：姓名、学号、导师、学科专业、培养单位、论文提交日期
+  - 摘要格式：以论文标题作为页面标题，并增加顶格的「摘要 / Abstract」引导语
+- 上游修复（继承自 `v0.9a` 之后的 `main` 分支）
   - 正确为全局 / 局部变量赋值 - [#329]、[#331]
     - 感谢 [@muzimuzhi]！
 
@@ -241,7 +254,6 @@
 [v0.8 (2022-09-04)]: https://github.com/stone-zeng/fduthesis/compare/v0.7e...v0.8
 [v0.9 (2023-02-26)]: https://github.com/stone-zeng/fduthesis/compare/v0.8...v0.9
 [v0.9a (2023-05-27)]: https://github.com/stone-zeng/fduthesis/compare/v0.9...v0.9a
-[未发布]: https://github.com/stone-zeng/fduthesis/compare/v0.9a...main
 
 [#2]: https://github.com/stone-zeng/fduthesis/issues/2
 [#3]: https://github.com/stone-zeng/fduthesis/issues/3
