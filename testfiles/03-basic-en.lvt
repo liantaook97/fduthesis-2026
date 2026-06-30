@@ -2,7 +2,7 @@
 
 \input{fduthesis-regression-test}
 
-\documentclass{fduthesis-en}
+\documentclass{fduthesis-2026-en}
 
 \DEFAULTSETUP
 

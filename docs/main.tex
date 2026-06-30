@@ -19,8 +19,8 @@
 % \fi
 
 %*********************************************************************
-% fduthesis: 复旦大学论文模板
-% 2023-05-27 v0.9a
+% fduthesis-2026: 复旦大学论文模板
+% 2026-06-29 v0.9a-2026.1
 %
 % 重要提示：
 %   1. 请确保使用 UTF-8 编码保存
@@ -30,15 +30,15 @@
 %   5. 不需要的注释可以尽情删除
 %*********************************************************************
 
-\documentclass[type=doctor]{fduthesis}
+\documentclass[type=doctor]{fduthesis-2026}
 % 模板选项：
 %   type = doctor|master|bachelor  论文类型，默认为本科论文
 %   oneside|twoside                论文的单双面模式，默认为 twoside
 %   draft = true|false             是否开启草稿模式，默认关闭
 % 带选项的用法示例：
-%   \documentclass[oneside]{fduthesis}
-%   \documentclass[twoside, draft=true]{fduthesis}
-%   \documentclass[type=bachelor, twoside, draft=true]{fduthesis}
+%   \documentclass[oneside]{fduthesis-2026}
+%   \documentclass[twoside, draft=true]{fduthesis-2026}
+%   \documentclass[type=bachelor, twoside, draft=true]{fduthesis-2026}
 
 \fdusetup{
   % 参数设置
@@ -170,9 +170,11 @@
     % 作者姓名（英文 / 拼音）
     % 目前不需要填写
     %
-    supervisor = {某某某\quad 教授},
-    % 导师
-    % 姓名与职称之间可以用 \quad 打印一个空格
+    supervisor = {某某某},
+    % 导师姓名
+    % 
+    supervisor-title = {教授},
+    % 导师职称 自动跟在导师姓名后，间隔一个空格，出现在封面「导师姓名、职称」项中 
     %
     major = {物理学},
     % 专业
@@ -190,6 +192,14 @@
     %
     student-id = {12300000000},
     % 作者学号
+    %
+    % student-category = {none},
+    % 作者教育项目类型，默认为 none（普通项目）
+    % 允许选项：
+    %   student-category = equivalent|english-program
+    % 说明：
+    %   equivalent       同等学力人员
+    %   english-program  英文项目
     %
     % date = {2023 年 1 月 1 日},
     % 日期

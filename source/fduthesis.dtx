@@ -3,6 +3,10 @@
 % !TeX encoding = UTF-8
 %
 % Copyright (C) 2017--2024 by Xiangdong Zeng <xdzeng96@gmail.com>
+% Modified in 2026 by Li Antao (李桉涛) <anthony.li.antao@gmail.com>,
+% based on fduthesis v0.9a, adapting it to Fudan University's 2026
+% thesis regulations. The modified template is renamed `fduthesis-2026'
+% to distinguish it from the original `fduthesis'.
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -16,15 +20,16 @@
 %
 % This work has the LPPL maintenance status `maintained'.
 %
-% The Current Maintainer of this work is Xiangdong Zeng.
+% The Current Maintainer of the original `fduthesis' is Xiangdong Zeng;
+% the Current Maintainer of this modified `fduthesis-2026' is Li Antao.
 %
 % This work consists of the files fduthesis.dtx,
 %                                 fduthesis-doc.dtx,
 %                                 fduthesis-logo.dtx,
-%           and the derived files fduthesis.ins,
-%                                 fduthesis.cls,
-%                                 fduthesis-en.cls,
-%                                 fduthesis.def,
+%           and the derived files fduthesis-2026.ins,
+%                                 fduthesis-2026.cls,
+%                                 fduthesis-2026-en.cls,
+%                                 fduthesis-2026.def,
 %                                 fdudoc.cls,
 %                                 fdulogo.sty,
 %                                 fdulogo-example.tex,
@@ -46,7 +51,7 @@
 The `fduthesis` Class
 =====================
 
-*LaTeX thesis template for Fudan University, v0.9a*
+*LaTeX thesis template for Fudan University, v0.9a-2026.1*
 
 Overview
 --------
@@ -142,6 +147,8 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
 \preamble
 
     Copyright (C) 2017--2024 by Xiangdong Zeng <xdzeng96@gmail.com>
+    Modified in 2026 by Li Antao (李桉涛) <anthony.li.antao@gmail.com>,
+    based on fduthesis v0.9a, renamed `fduthesis-2026'.
 
     This work may be distributed and/or modified under the
     conditions of the LaTeX Project Public License, either
@@ -155,15 +162,16 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
 
     This work has the LPPL maintenance status `maintained'.
 
-    The Current Maintainer of this work is Xiangdong Zeng.
+    The Current Maintainer of the original `fduthesis' is Xiangdong Zeng;
+    the Current Maintainer of this modified `fduthesis-2026' is Li Antao.
 
     This work consists of the files fduthesis.dtx,
                                     fduthesis-doc.dtx,
                                     fduthesis-logo.dtx,
-              and the derived files fduthesis.ins,
-                                    fduthesis.cls,
-                                    fduthesis-en.cls,
-                                    fduthesis.def,
+              and the derived files fduthesis-2026.ins,
+                                    fduthesis-2026.cls,
+                                    fduthesis-2026-en.cls,
+                                    fduthesis-2026.def,
                                     fdudoc.cls,
                                     fdulogo.sty,
                                     fdulogo-example.tex,
@@ -181,9 +189,9 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
 
 \generate{
   \usedir{tex/latex/fduthesis}
-    \file{\jobname.cls}        {\from{\jobname.dtx}{class}}
-    \file{\jobname-en.cls}     {\from{\jobname.dtx}{class-en}}
-    \file{\jobname.def}        {\from{\jobname.dtx}{definition}}
+    \file{fduthesis-2026.cls}    {\from{\jobname.dtx}{class}}
+    \file{fduthesis-2026-en.cls} {\from{\jobname.dtx}{class-en}}
+    \file{fduthesis-2026.def}    {\from{\jobname.dtx}{definition}}
     \file{fdudoc.cls}          {\from{\jobname.dtx}{doc}
                                 \from{\jobname-doc.dtx}{doc}}
     \file{fdulogo.sty}         {\from{\jobname.dtx}{logo}
@@ -194,7 +202,7 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
                                 \from{\jobname-logo.dtx}{cover}}
 %<*internal>
   \usedir{source/latex/fduthesis}
-    \file{\jobname.ins}        {\from{\jobname.dtx}{install}}
+    \file{fduthesis-2026.ins}  {\from{\jobname.dtx}{install}}
 %</internal>
   \usedir{doc/latex/fduthesis}
   \nopreamble\nopostamble
@@ -209,9 +217,9 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
 \Msg{*                                                           *}
 \Msg{* The recommended directory is TDS:tex/latex/fduthesis      *}
 \Msg{*                                                           *}
-\Msg{*     fduthesis.cls                                         *}
-\Msg{*     fduthesis-en.cls                                      *}
-\Msg{*     fduthesis.def                                         *}
+\Msg{*     fduthesis-2026.cls                                    *}
+\Msg{*     fduthesis-2026-en.cls                                 *}
+\Msg{*     fduthesis-2026.def                                    *}
 \Msg{*     fdudoc.cls                                            *}
 \Msg{*     fdulogo.sty                                           *}
 \Msg{*                                                           *}
@@ -231,7 +239,7 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 %<class|class-en|doc|logo>\NeedsTeXFormat{LaTeX2e}[2020/10/01]
 %<*!(driver|install|ex-logo|cover)>
-%<!readme>\GetIdInfo $Id: fduthesis.dtx 0.9a 2023-05-27 12:00:00Z Xiangdong Zeng <xdzeng96@gmail.com> $
+%<!readme>\GetIdInfo $Id: fduthesis-2026.dtx 0.9a-2026.1 2026-06-29 12:00:00Z Xiangdong Zeng <xdzeng96@gmail.com> $
 %<class>  {Thesis template for Fudan University}
 %<class>\ProvidesExplClass{\ExplFileName}
 %<class-en>  {Thesis template for Fudan University (English version)}
@@ -271,7 +279,7 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
 
 \title{\textcolor{MaterialIndigo800}{\textbf{fduthesis: 复旦大学论文模板}}}
 \author{曾祥东}
-\date{2023/05/27\quad v0.9a%
+\date{2026/06/29\quad v0.9a-2026.1%
   \thanks{\url{https://github.com/stone-zeng/fduthesis}.}}
 %^^A! \title{\textcolor{MaterialIndigo800}{%
 %^^A!   \textbf{The \textsf{fduthesis} Class \\
@@ -1552,6 +1560,21 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A!     supervisor = (*\marg{name}*)
 %^^A!   \end{fdusyntax}
 %^^A!   Supervisor's name.
+%^^A! \end{function}
+%^^A!
+%
+% \begin{function}{info/supervisor-title}
+%   \begin{fdusyntax}[emph={[1]supervisor-title}]
+%     supervisor-title = (*\marg{职称}*)
+%   \end{fdusyntax}
+%   导师职称。2026 规范要求填写，显示于封面导师姓名之后，
+%   中间以一个 \tn{quad} 分隔。
+% \end{function}
+%^^A! \begin{function}{info/supervisor-title}
+%^^A!   \begin{fdusyntax}[emph={[1]supervisor-title}]
+%^^A!     supervisor-title = (*\marg{title}*)
+%^^A!   \end{fdusyntax}
+%^^A!   Academic title of the supervisor.
 %^^A! \end{function}
 %^^A!
 %
@@ -3042,7 +3065,7 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 % 载入参数配置文件。
 %    \begin{macrocode}
-\file_input:n { fduthesis.def }
+\file_input:n { fduthesis-2026.def }
 \@@_msg_new:nn { load-config-file }
   { You~ are~ loading~ config~ file~ "#1". }
 \tl_if_empty:NF \g_@@_config_tl
@@ -3913,6 +3936,21 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \end{macrocode}
 % \end{macro}
 %
+% \begin{macro}{\@@_chapter_titled:nn,\@@_chapter_titled:VV}
+% 把"标题"作为章标题用（封面、摘要），章标题不编号。
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_chapter_titled:nn #1#2
+  {
+    \group_begin:
+      \ctexset { chapter / numbering = false }
+      \chapter [ #2 ] {#1}
+    \group_end:
+    \@@_chapter_header:n {#2}
+  }
+\cs_generate_variant:Nn \@@_chapter_titled:nn { VV }
+%    \end{macrocode}
+% \end{macro}
+%
 % \begin{macro}{\@@_chapter_no_toc:n,\@@_chapter_no_toc:V}
 % 目录自身不出现在目录中，需特别处理。参考
 % \url{https://tex.stackexchange.com/a/1821}。
@@ -4444,6 +4482,7 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %   \l_@@_info_date_tl,
 %   \l_@@_info_author_tl,
 %   \l_@@_info_supervisor_tl,
+%   \l_@@_info_supervisor_title_tl,
 %   \l_@@_info_department_tl,
 %   \l_@@_info_major_tl,
 %   \l_@@_info_student_id_tl,
@@ -4456,8 +4495,8 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \begin{macrocode}
 \clist_map_inline:nn
   {
-    title, date, author, supervisor, department, major, student_id,
-    school_id, clc, jel
+    title, date, author, supervisor, supervisor_title, department, major,
+    student_id, school_id, clc, jel, student_category
   }
   { \tl_new:c { l_@@_info_ #1 _tl } }
 \clist_new:N \l_@@_info_instructors_clist
@@ -4564,6 +4603,13 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \end{macrocode}
 % \end{macro}
 %
+% \begin{macro}{info/supervisor-title}
+% 导师职称。2026 规范要求填写，显示于封面导师姓名之后。
+%    \begin{macrocode}
+    supervisor-title .tl_set:N = \l_@@_info_supervisor_title_tl,
+%    \end{macrocode}
+% \end{macro}
+%
 % \begin{macro}{info/instructors}
 % 指导小组成员。
 %    \begin{macrocode}
@@ -4598,6 +4644,21 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % 学校代码。
 %    \begin{macrocode}
     school-id   .tl_set:N    = \l_@@_info_school_id_tl,
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{info/student-category}
+% \changes{v0.9a-2026.1}{2026/06/29}{新增 \opt{info/student-category} 选项，
+%   用于标注同等学力人员或英文项目。}
+% 同等学力人员或英文项目标注，显示于封面右上角学校代码下方。
+% \opt{none}（默认）不显示；\opt{equivalent} 显示“同等学力人员”，
+% \opt{english-program} 显示“英文项目”。
+%    \begin{macrocode}
+    student-category .choices:nn =
+      { none, equivalent, english-program }
+      { \tl_set_eq:NN \l_@@_info_student_category_tl \l_keys_choice_tl },
+    student-category .initial:n        = none,
+    student-category .value_required:n = true,
 %    \end{macrocode}
 % \end{macro}
 %
@@ -4767,55 +4828,60 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \changes{v0.5}{2017/09/19}{使用 \pkg{expl3} 以及内部函数改写
 %   封面，减少对 \LaTeXe{} 的依赖。}
 %
-% \begin{macro}{\@@_cover_id:,\@@_cover_id_tabular:n,\@@_cover_id_aux:n}
-% 右上角的密级、学校代码和学号。
-% \changes{v0.9a}{2023/05/21}{封面密级、学校代码和学号改用表格实现。}
+% \begin{macro}{\@@_cover_id:,\@@_cover_id_table:,\@@_cover_id_aux:n}
+% 中图分类号固定在左上角；密级、学校代码、同等学力／英文项目标注用表格
+% 在右上角对齐排列（标签右对齐、全角冒号对齐、内容左对齐）。
+% \changes{v0.9a-2026.1}{2026/06/29}{封面顶部改为中图分类号（左）固定，右侧密级、
+%   学校代码、同等学力／英文项目标注用表格对齐。}
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_cover_id:
   {
-    \tl_if_eq:NnTF \l_@@_info_secret_level_tl { none }
-      { \@@_cover_id_tabular:n { } }
-      { \@@_cover_id_tabular:n { \@@_cover_secret: \\ } }
+    \hbox_to_wd:nn { \textwidth }
+      {
+        \@@_cover_id_aux:n { clc }
+        \hfil
+        \@@_cover_id_table:
+      }
   }
-\cs_new_protected:Npn \@@_cover_id_tabular:n #1
+\cs_new_protected:Npn \@@_cover_id_table:
   {
-    \exp_args:Nnx \begin{tabular} { \c_@@_cover_id_align_tl }
-      #1
-      \@@_cover_id_aux:n { school_id  } \\
-      \@@_cover_id_aux:n { student_id }
+    \begin{tabular} [ t ] { r @ { \c_@@_fwid_colon_tl } l }
+      \tl_if_eq:NnF \l_@@_info_secret_level_tl { none }
+        {
+          { \sffamily \c_@@_name_secret_level_tl }
+          & { \sffamily \@@_cover_secret: } \\
+        }
+      \c_@@_name_school_id_tl & \l_@@_info_school_id_tl
+      \tl_if_eq:NnF \l_@@_info_student_category_tl { none }
+        {
+          \\
+          \multicolumn { 2 } { l }
+            {
+              \prop_item:No \c_@@_student_category_prop
+                { \l_@@_info_student_category_tl }
+            }
+        }
     \end{tabular}
   }
 \cs_new:Npn \@@_cover_id_aux:n #1
   {
-    \tl_use:c { c_@@_name_ #1 _tl } &
+    \tl_use:c { c_@@_name_ #1 _tl }
+    \c_@@_fwid_colon_tl
     \tl_use:c { l_@@_info_ #1 _tl }
   }
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{variable}{\c_@@_cover_id_align_tl}
-% 密级、学号栏对齐格式：左右两栏均左对齐，中间以冒号分隔，并且不加间距。
-%    \begin{macrocode}
-\tl_const:Nn \c_@@_cover_id_align_tl
-  { l @ { \c_@@_fwid_colon_tl } l @ { } }
-%    \end{macrocode}
-% \end{variable}
-%
 % \begin{macro}{\@@_cover_secret:}
-% 密级，使用无衬线字体。
+% 密级的数值部分（密级名称、星号与保密年限），供 \cs{@@_cover_id_table:}
+% 在表格中使用，无衬线字体由调用处设置。
 %    \begin{macrocode}
 \cs_new:Npn \@@_cover_secret:
   {
-    \multicolumn { 2 } { l }
-      {
-        \sffamily
-        \c_@@_name_secret_level_tl
-        \c_@@_fwid_colon_tl
-        \prop_item:No \c_@@_secret_prop
-          { \l_@@_info_secret_level_tl }
-        \c_@@_name_secret_star_tl
-        \l_@@_info_secret_year_tl
-      }
+    \prop_item:No \c_@@_secret_prop
+      { \l_@@_info_secret_level_tl }
+    \c_@@_name_secret_star_tl
+    \l_@@_info_secret_year_tl
   }
 %    \end{macrocode}
 % \end{macro}
@@ -4874,6 +4940,8 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \begin{macro}{\@@_cover_info:}
 % \changes{v0.8}{2021/09/21}{调整专业学位的封面信息栏。}
 % \changes{v0.9}{2023/02/05}{封面信息栏改用表格实现。}
+% \changes{v0.9a-2026.1}{2026/06/29}{专业学位封面“学科专业”一栏不再使用
+%   “专业学位类别（领域）”，统一为“学科专业”，符合 2026 规范。}
 % 信息栏。
 %    \begin{macrocode}
 \cs_new_protected:Npn \@@_cover_info:
@@ -4881,18 +4949,10 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
     \group_begin:
       \zihao { 4 }
 %    \end{macrocode}
-% 专业学位与学术学位对应的左侧字段有所不同，这里统一存入 \cs{c_@@_name_major_tl}。
-%    \begin{macrocode}
-      \tl_if_eq:NnT \l_@@_info_degree_type_tl { professional }
-        {
-          \tl_set_eq:NN
-            \c_@@_name_major_tl \c_@@_name_major_professional_tl
-        }
-%    \end{macrocode}
 % 将信息栏的每一行存入 |clist| 变量中。
 %    \begin{macrocode}
       \clist_clear:N \l_@@_tmpa_clist
-      \clist_map_inline:nn { department, major, author, supervisor, date }
+      \clist_map_inline:nn { author, student_id, supervisor, major, department, date }
         {
           \clist_put_right:Nn \l_@@_tmpa_clist
             {
@@ -4900,6 +4960,11 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
                 { \tl_use:c { c_@@_name_ ##1 _tl } }
               &
               \tl_use:c { l_@@_info_ ##1 _tl }
+              \str_if_eq:nnT { ##1 } { supervisor }
+                {
+                  \tl_if_empty:NF \l_@@_info_supervisor_title_tl
+                    { \quad \l_@@_info_supervisor_title_tl }
+                }
             }
         }
 %    \end{macrocode}
@@ -4915,10 +4980,11 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \end{macro}
 %
 % \begin{variable}{\c_@@_cover_info_align_tl}
-% 信息栏对齐格式：左右两栏均居中，中间以冒号分隔。
+% \changes{v0.9a-2026.1}{2026/06/29}{信息栏内容列改为左对齐，符合 2026 规范。}
+% 信息栏对齐格式：左栏（名称）居中，右栏（内容）左对齐，中间以冒号分隔。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_cover_info_align_tl
-  { c @ { \c_@@_fwid_colon_tl } c }
+  { c @ { \c_@@_fwid_colon_tl \exp_not:N \hspace { 0.5 em } } l }
 %    \end{macrocode}
 % \end{variable}
 %
@@ -4929,7 +4995,7 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
   {
     \tl_if_eq:NnTF \l_@@_info_degree_type_tl { professional }
       { \@@_spread_box:nn { 9 em } {#1} }
-      { \@@_spread_box:nn { 6 em } {#1} }
+      { \@@_spread_box:nn { 7 em } {#1} }
   }
 %    \end{macrocode}
 % \end{macro}
@@ -5212,7 +5278,7 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
     type     / bottom-skip = -18 pt,
     degree   / bottom-skip = 0 pt plus 0.8 fill,
     title-en / bottom-skip = 0 pt plus 2.5 fill,
-    id       / align       = right,
+    id       / align       = normal,
     logo     / align       = center,
     type     / align       = center,
     degree   / align       = center,
@@ -5411,14 +5477,22 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \end{environment}
 %
 % \begin{macro}{\@@_abstract_begin:,\@@_abstract_en_begin:}
-% 摘要页标题。
+% \changes{v0.9a-2026.1}{2026/06/29}{摘要正文前增加顶格的“摘要：”／“Abstract”
+%   引导词，符合 2026 规范。}
+% 摘要页标题（论文题目作章标题），并在正文前输出顶格的“摘要：”引导词。
 %    \begin{macrocode}
 %<*class>
 \cs_new_protected:Npn \@@_abstract_begin:
-  { \@@_chapter:V \c_@@_name_abstract_tl    }
+  {
+    \@@_chapter_titled:VV \l_@@_info_title_tl \c_@@_name_abstract_tl
+    \noindent { \sffamily 摘要 \c_@@_fwid_colon_tl }
+  }
 %</class>
 \cs_new_protected:Npn \@@_abstract_en_begin:
-  { \@@_chapter:V \c_@@_name_abstract_en_tl }
+  {
+    \@@_chapter_titled:VV \l_@@_info_title_en_tl \c_@@_name_abstract_en_tl
+    \noindent { \bfseries \c_@@_name_abstract_en_tl } ~
+  }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -5426,7 +5500,9 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \changes{v0.8}{2021/12/22}{没有指定 CLC/JEL 分类号时不再显示。}
 %
 % \begin{macro}{\@@_abstract_end:}
-% 摘要正文完成后，输出关键词列表和 CLC/JEL 分类号。
+% \changes{v0.9a-2026.1}{2026/06/29}{中文摘要页不再输出中图分类号（CLC），
+%   仅保留关键词列表，符合 2026 规范。}
+% 摘要正文完成后，输出关键词列表。
 %    \begin{macrocode}
 %<*class>
 \cs_new_protected:Npn \@@_abstract_end:
@@ -5434,12 +5510,6 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
     \@@_keywords:nNn
       { \sffamily \c_@@_name_keywords_tl \c_@@_fwid_colon_tl }
       \l_@@_info_keywords_clist { \c_@@_fwid_semicolon_tl }
-    \tl_if_empty:NF \l_@@_info_clc_tl
-      {
-        \@@_clc_jel:nn
-          { \sffamily \c_@@_name_clc_tl \c_@@_fwid_colon_tl }
-          { \l_@@_info_clc_tl }
-      }
   }
 %</class>
 %    \end{macrocode}
@@ -5453,15 +5523,7 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
     \@@_keywords:nNn
       { \bfseries \c_@@_name_keywords_en_tl \@@_quad: }
       \l_@@_info_keywords_en_clist { ; ~ }
-    \tl_if_empty:NTF \l_@@_info_jel_tl
-      {
-        \tl_if_empty:NF \l_@@_info_clc_tl
-          {
-            \@@_clc_jel:nn
-              { \bfseries \c_@@_name_clc_en_tl \@@_quad: }
-              { \l_@@_info_clc_tl }
-          }
-      }
+    \tl_if_empty:NF \l_@@_info_jel_tl
       {
         \@@_clc_jel:nn
           { \bfseries \c_@@_name_jel_en_tl \@@_quad: }
@@ -6249,7 +6311,20 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \end{macrocode}
 % \end{variable}
 %
+% \begin{variable}{\c_@@_student_category_prop}
+% 同等学力人员或英文项目标注的文案。
+%    \begin{macrocode}
+\prop_const_from_keyval:Nn \c_@@_student_category_prop
+  {
+    equivalent      = 同等学力人员,
+    english-program = 英文项目,
+  }
+%    \end{macrocode}
+% \end{variable}
+%
 % \changes{v0.9a}{2023/03/23}{“关键字”更改为“关键词”。}
+% \changes{v0.9a-2026.1}{2026/06/29}{封面信息栏名称更新为“学号”“培养单位”
+%   “学科专业”“学生姓名”“导师姓名、职称”“论文提交日期”，符合 2026 规范。}
 %
 % 默认名称。注意空格是忽略掉的。
 %    \begin{macrocode}
@@ -6258,13 +6333,13 @@ Copyright (C) 2017&ndash;2024 by Xiangdong Zeng <xdzeng96@gmail.com>.
     { secret_level       } { 密 \qquad 级                  },
     { secret_star        } { \textrm { \bigstar }          },
     { school_id          } { 学校代码                      },
-    { student_id         } { 学 \qquad 号                  },
-    { department         } { 院系                          },
-    { major              } { 专业                          },
+    { student_id         } { 学号                          },
+    { department         } { 培养单位                      },
+    { major              } { 学科专业                      },
     { major_professional } { 专业学位类别（领域）          },
-    { author             } { 姓名                          },
-    { supervisor         } { 指导教师                      },
-    { date               } { 完成日期                      },
+    { author             } { 学生姓名                      },
+    { supervisor         } { 导师姓名、职称                },
+    { date               } { 论文提交日期                  },
     { instructors        } { 指导小组成员                  },
     { author_sign        } { 作者签名                      },
     { supervisor_sign    } { 导师签名                      },

@@ -26,7 +26,7 @@ Completed box being shipped out [1]
 .....\special{color pop}
 ...\glue 19.8738
 ...\glue(\lineskip) 0.0
-...\vbox(700.50723+0.0)x416.54877, glue set 541.95917fil
+...\vbox(700.50723+0.0)x416.54877, glue set 556.30475fil
 ....\write-{}
 ....\write-{}
 ....\special{pdf:dest (chapter*.1) [@thispage /XYZ @xpos @ypos null]}
@@ -44,9 +44,17 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\hbox(16.6221+0.33725)x416.54877, glue set 163.82834fil
+....\hbox(16.6462+0.33725)x416.54877, glue set 102.54338fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
-.....\TU/XITS(0)/b/n/24.09 Abstract
+.....\TU/XITS(0)/b/n/24.09 This
+.....\glue 6.0225 plus 3.01125 minus 2.00749
+.....\TU/XITS(0)/b/n/24.09 is
+.....\glue 6.0225 plus 3.01125 minus 2.00749
+.....\TU/XITS(0)/b/n/24.09 a
+.....\glue 6.0225 plus 3.01125 minus 2.00749
+.....\TU/XITS(0)/b/n/24.09 Thesis
+.....\glue 6.0225 plus 3.01125 minus 2.00749
+.....\TU/XITS(0)/b/n/24.09 Title
 .....\kern -0.0002
 .....\kern 0.0002
 .....\penalty 10000
@@ -61,8 +69,12 @@ Completed box being shipped out [1]
 ....\penalty 10000
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\hbox(8.22673+2.6258)x416.54877, glue set 321.4126fil
-.....\hbox(0.0+0.0)x18.0
+....\hbox(8.31105+2.6258)x416.54877, glue set 288.94406fil
+.....\TU/XITS(0)/b/n/12.045 Abstract
+.....\kern -0.0002
+.....\kern 0.0002
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\glue 3.01125 plus 1.50562 minus 1.00374
 .....\TU/XITS(0)/m/n/12.045 English
 .....\glue 3.01125 plus 1.50562 minus 1.00374
 .....\TU/XITS(0)/m/n/12.045 abstract
@@ -107,23 +119,7 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\glue(\parskip) 0.0 plus 1.0
-....\glue(\parskip) 0.0
-....\glue(\baselineskip) 3.50511
-....\hbox(8.32309+0.22884)x416.54877, glue set 301.66357fil
-.....\TU/XITS(0)/b/n/12.045 CLC
-.....\glue 3.01125 plus 1.5041 minus 1.00473
-.....\TU/XITS(0)/b/n/12.045 code:
-.....\kern -0.0002
-.....\kern 0.0002
-.....\glue 12.045
-.....\TU/XITS(0)/m/n/12.045 TS803.23
-.....\kern -0.0002
-.....\kern 0.0002
-.....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
-.....\glue(\rightskip) 0.0
-....\glue -0.22884
+....\glue -2.6258
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ...\glue(\baselineskip) 21.77327

@@ -2,7 +2,7 @@
 
 \input{fduthesis-regression-test}
 
-\documentclass{fduthesis}
+\documentclass{fduthesis-2026}
 \usepackage{pifont}
 
 \MAKECOVERFALSE

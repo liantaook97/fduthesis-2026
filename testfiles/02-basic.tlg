@@ -26,15 +26,15 @@ Completed box being shipped out [1]
 .....\special{color pop}
 ...\glue 19.8738
 ...\glue(\lineskip) 0.0
-...\vbox(700.50723+0.0)x416.54877, glue set 518.39542fil
+...\vbox(700.50723+0.0)x416.54877, glue set 537.93767fil
 ....\write-{}
 ....\write-{}
 ....\special{pdf:dest (chapter*.1) [@thispage /XYZ @xpos @ypos null]}
-....\write3{\protect \BOOKMARK [0][-]{chapter*.1}{\376\377\144\130\211\201}{}% 1}
-....\write1{\@writefile{toc}{\protect \contentsline {chapter}{\protect \normalfont  \protect \sffamily  摘要}{\thepage }{chapter*.1}\protected@file@percent }}
-....\marks1{\MakeUppercase    []{摘要}}
+....\write3{\protect \BOOKMARK [0][-]{chapter*.1}{\376\377\144\130\000\040\211\201}{}% 1}
+....\write1{\@writefile{toc}{\protect \contentsline {chapter}{\protect \normalfont  \protect \sffamily  摘\hskip 1em\relax 要}{\thepage }{chapter*.1}\protected@file@percent }}
+....\marks1{\MakeUppercase    []{摘\hskip 1em\relax 要}}
 ....\marks2{\prg_do_nothing: }
-....\mark{{\MakeUppercase    []{摘要}}{}}
+....\mark{{\MakeUppercase    []{摘\hskip 1em\relax 要}}{}}
 ....\write1{\@writefile{lof}{\protect \addvspace {10.0pt}}}
 ....\write1{\@writefile{lot}{\protect \addvspace {10.0pt}}}
 ....\glue(\topskip) 12.0
@@ -44,13 +44,23 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\hbox(18.5493+4.19165)x416.54877, glue set 172.13939fil
+....\hbox(18.93474+4.26392)x416.54877, glue set 111.9144fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
-.....\TU/FandolHei(0)/m/n/24.09 摘
-.....\kern -0.00017
-.....\kern 0.00017
-.....\glue 24.09
-.....\TU/FandolHei(0)/m/n/24.09 要
+.....\TU/FandolHei(0)/m/n/24.09 这
+.....\glue 0.0 plus 2.07393
+.....\TU/FandolHei(0)/m/n/24.09 是
+.....\glue 0.0 plus 2.07393
+.....\TU/FandolHei(0)/m/n/24.09 一
+.....\glue 0.0 plus 2.07393
+.....\TU/FandolHei(0)/m/n/24.09 个
+.....\glue 0.0 plus 2.07393
+.....\TU/FandolHei(0)/m/n/24.09 论
+.....\glue 0.0 plus 2.07393
+.....\TU/FandolHei(0)/m/n/24.09 文
+.....\glue 0.0 plus 2.07393
+.....\TU/FandolHei(0)/m/n/24.09 标
+.....\glue 0.0 plus 2.07393
+.....\TU/FandolHei(0)/m/n/24.09 题
 .....\kern -0.00017
 .....\kern 0.00017
 .....\penalty 10000
@@ -65,8 +75,15 @@ Completed box being shipped out [1]
 ....\penalty 10000
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\hbox(9.371+2.1199)x416.54877, glue set 344.27878fil
-.....\hbox(0.0+0.0)x24.09
+....\hbox(9.371+2.1199)x416.54877, glue set 332.23378fil
+.....\TU/FandolHei(0)/m/n/12.045 摘
+.....\glue 0.0 plus 0.59575
+.....\TU/FandolHei(0)/m/n/12.045 要
+.....\penalty 10000
+.....\TU/FandolHei(0)/m/n/12.045 ：
+.....\rule(0.0+0.0)x-8.52786
+.....\glue 8.52786 minus 6.0225
+.....\glue 0.0 plus 0.59575
 .....\TU/FandolSong(0)/m/n/12.045 中
 .....\glue 0.0 plus 0.59575
 .....\TU/FandolSong(0)/m/n/12.045 文
@@ -146,34 +163,7 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\glue(\parskip) 0.0 plus 1.0
-....\glue(\parskip) 0.0
-....\glue(\baselineskip) 8.44882
-....\hbox(9.33487+2.24036)x416.54877, glue set 297.20692fil
-.....\TU/FandolHei(0)/m/n/12.045 中
-.....\glue 0.0 plus 0.59575
-.....\TU/FandolHei(0)/m/n/12.045 图
-.....\glue 0.0 plus 0.59575
-.....\TU/FandolHei(0)/m/n/12.045 分
-.....\glue 0.0 plus 0.59575
-.....\TU/FandolHei(0)/m/n/12.045 类
-.....\glue 0.0 plus 0.59575
-.....\TU/FandolHei(0)/m/n/12.045 号
-.....\penalty 10000
-.....\TU/FandolHei(0)/m/n/12.045 ：
-.....\rule(0.0+0.0)x-8.52786
-.....\kern 0.00052
-.....\kern -0.00052
-.....\kern -0.99649
-.....\kern 0.99649
-.....\glue 8.52786 minus 6.0225
-.....\TU/XITS(0)/m/n/12.045 TS803.23
-.....\kern -0.0002
-.....\kern 0.0002
-.....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
-.....\glue(\rightskip) 0.0
-....\glue -2.24036
+....\glue -2.21626
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ...\glue(\baselineskip) 21.77327
@@ -249,7 +239,7 @@ Completed box being shipped out [3]
 .....\special{color pop}
 ...\glue 19.8738
 ...\glue(\lineskip) 0.0
-...\vbox(700.50723+0.0)x416.54877, glue set 524.3577fil
+...\vbox(700.50723+0.0)x416.54877, glue set 544.27333fil
 ....\special{pdf:dest (chapter*.2) [@thispage /XYZ @xpos @ypos null]}
 ....\write3{\protect \BOOKMARK [0][-]{chapter*.2}{\376\377\000A\000b\000s\000t\000r\000a\000c\000t}{}% 2}
 ....\write1{\@writefile{toc}{\protect \contentsline {chapter}{\protect \normalfont  \protect \sffamily  Abstract}{\thepage }{chapter*.2}\protected@file@percent }}
@@ -265,9 +255,17 @@ Completed box being shipped out [3]
 ....\glue 0.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\hbox(17.56161+0.36133)x416.54877, glue set 164.15356fil
+....\hbox(17.56161+0.36133)x416.54877, glue set 98.5083fil
 .....\glue(\leftskip) 0.0 plus 1.0fil
-.....\TU/texgyreheros(0)/m/n/24.09 Abstract
+.....\TU/texgyreheros(0)/m/n/24.09 This
+.....\glue 6.69702 plus 3.34851 minus 2.23233
+.....\TU/texgyreheros(0)/m/n/24.09 is
+.....\glue 6.69702 plus 3.34851 minus 2.23233
+.....\TU/texgyreheros(0)/m/n/24.09 a
+.....\glue 6.69702 plus 3.34851 minus 2.23233
+.....\TU/texgyreheros(0)/m/n/24.09 Thesis
+.....\glue 6.69702 plus 3.34851 minus 2.23233
+.....\TU/texgyreheros(0)/m/n/24.09 Title
 .....\kern -0.0002
 .....\kern 0.0002
 .....\penalty 10000
@@ -282,8 +280,12 @@ Completed box being shipped out [3]
 ....\penalty 10000
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\hbox(8.22673+2.6258)x416.54877, glue set 315.3226fil
-.....\hbox(0.0+0.0)x24.09
+....\hbox(8.31105+2.6258)x416.54877, glue set 288.94406fil
+.....\TU/XITS(0)/b/n/12.045 Abstract
+.....\kern -0.0002
+.....\kern 0.0002
+.....\glue 3.01125 plus 1.50562 minus 1.00374
+.....\glue 3.01125 plus 1.50562 minus 1.00374
 .....\TU/XITS(0)/m/n/12.045 English
 .....\glue 3.01125 plus 1.50562 minus 1.00374
 .....\TU/XITS(0)/m/n/12.045 abstract
@@ -328,23 +330,7 @@ Completed box being shipped out [3]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\glue(\parskip) 0.0 plus 1.0
-....\glue(\parskip) 0.0
-....\glue(\baselineskip) 9.05107
-....\hbox(8.32309+0.22884)x416.54877, glue set 301.66357fil
-.....\TU/XITS(0)/b/n/12.045 CLC
-.....\glue 3.01125 plus 1.5041 minus 1.00473
-.....\TU/XITS(0)/b/n/12.045 code:
-.....\kern -0.0002
-.....\kern 0.0002
-.....\glue 12.045
-.....\TU/XITS(0)/m/n/12.045 TS803.23
-.....\kern -0.0002
-.....\kern 0.0002
-.....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
-.....\glue(\rightskip) 0.0
-....\glue -0.22884
+....\glue -2.6258
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ...\glue(\baselineskip) 21.77327
